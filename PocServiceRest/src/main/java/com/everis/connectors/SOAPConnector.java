@@ -10,27 +10,35 @@ import org.springframework.ws.soap.saaj.SaajSoapMessageFactory;
 
 public class SOAPConnector extends WebServiceGatewaySupport {
 
-	public Object callWebService(String url, Object request){
-       
-		try {
-		 SaajSoapMessageFactory messageFactory;
-			messageFactory = new SaajSoapMessageFactory(
-			            MessageFactory.newInstance());
-	        messageFactory.afterPropertiesSet();
+	public Object callWebService(String url, Object request) {
 
-	        WebServiceTemplate webServiceTemplate = new WebServiceTemplate(
-	                messageFactory);
-	        Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-	        webServiceTemplate.setMarshaller(marshaller);
-	        webServiceTemplate.setUnmarshaller(marshaller);
-	        
-		return webServiceTemplate.marshalSendAndReceive(url, request);
-		
+		try {
+			SaajSoapMessageFactory messageFactory;
+			messageFactory = new SaajSoapMessageFactory(MessageFactory.newInstance());
+
+			WebServiceTemplate webServiceTemplate = new WebServiceTemplate(messageFactory);
+			messageFactory.afterPropertiesSet();
+			Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
+
+			marshaller.setContextPath("com.everis.model");
+			marshaller.afterPropertiesSet();
+
+			webServiceTemplate.setMarshaller(marshaller);
+			webServiceTemplate.setUnmarshaller(marshaller);
+
+			return webServiceTemplate.marshalSendAndReceive(url, request);
+
 		} catch (SOAPException e) {
 			// TODO Auto-generated catch block
+			System.out.println("ROMPIO SOAPException: " + e.getMessage());
 			e.printStackTrace();
-			return null;
+			return e.getMessage();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("ROMPIO Exception e: " + e.getMessage());
+			return e.getMessage();
 		}
-    }
-	
+	}
+
 }

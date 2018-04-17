@@ -50,7 +50,7 @@
 	</dependencies>
 
 	<build>
-		<!-- <pluginManagement> -->
+		<!-- <pluginManagement> a la hora de desplegar el war o subirlo a un servidor de integracion continua descomentar este pluginManagment -->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -83,12 +83,6 @@
 					</schemas>
 				</configuration>
 
-				<!-- <schemas> -->
-				<!-- <schema> -->
-				<!-- <url>wGesTabRef.xml</url> -->
-				<!-- </schema> -->
-				<!-- </schemas> -->
-				<!-- </configuration> -->
 			</plugin>
 			<!-- end::wsdl[] -->
 		</plugins>

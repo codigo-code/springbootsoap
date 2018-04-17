@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: PocServiceRest
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: dpanella
+Built-By: rober
 Implementation-Vendor-Id: com.everis
 Build-Jdk: 1.8.0_161
 Implementation-URL: http://maven.apache.org
