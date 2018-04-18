@@ -2,6 +2,7 @@ com\everis\webservice\afip\Vigencia.class
 com\everis\webservice\afip\ConsultarFechaUltActResponse.class
 com\everis\webservice\afip\ListaArancelResponse.class
 com\everis\webservice\afip\ArrayOfOpcion.class
+com\everis\model\ListaEmpresas.class
 com\everis\webservice\afip\ArrayOfDescripcionCodificacion.class
 com\everis\webservice\afip\package-info.class
 com\everis\webservice\afip\WsDummyResponse.class
@@ -22,15 +23,18 @@ com\everis\webservice\afip\ListaLugaresOperativos.class
 com\everis\webservice\afip\ListaVigenciasResponse.class
 com\everis\webservice\afip\ListaPaisesAduanas.class
 com\everis\webservice\afip\ListaPaisesAduanasResponse.class
+com\everis\model\Empresas.class
 com\everis\webservice\afip\ListaVigencias.class
 com\everis\webservice\afip\Opciones.class
 com\everis\webservice\afip\PaisesAduanas.class
 com\everis\webservice\afip\ArrayOfDescripcion.class
 com\everis\webservice\afip\Dummy.class
+com\everis\model\Autenticacion.class
 com\everis\webservice\afip\ListaDescripcion.class
 com\everis\webservice\afip\DescripcionesCodificaciones.class
 com\everis\webservice\afip\PaisAduana.class
 com\everis\webservice\afip\ListaTablasReferenciaResponse.class
+com\everis\model\Empresa.class
 com\everis\webservice\afip\Vigencias.class
 com\everis\App.class
 com\everis\webservice\afip\ListaTablasReferenciaServicioResponse.class
@@ -52,4 +56,5 @@ com\everis\webservice\afip\FechaUltAct.class
 com\everis\webservice\afip\Opcion.class
 com\everis\webservice\afip\ObjectFactory.class
 com\everis\webservice\afip\TablasReferencia.class
+com\everis\model\ListaEmpresasResponse.class
 com\everis\webservice\afip\ArrayOfTablaReferencia.class
