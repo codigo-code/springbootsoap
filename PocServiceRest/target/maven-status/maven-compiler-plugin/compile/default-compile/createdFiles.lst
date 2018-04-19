@@ -29,6 +29,7 @@ com\everis\webservice\afip\Opciones.class
 com\everis\webservice\afip\PaisesAduanas.class
 com\everis\webservice\afip\ArrayOfDescripcion.class
 com\everis\webservice\afip\Dummy.class
+com\everis\config\Config.class
 com\everis\model\Autenticacion.class
 com\everis\webservice\afip\ListaDescripcion.class
 com\everis\webservice\afip\DescripcionesCodificaciones.class
